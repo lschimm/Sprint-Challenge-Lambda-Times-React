@@ -25,11 +25,11 @@ const Tabs = props => {
   );
 };
 
-Tabs.propTypes={
-  selectTabHandler: PropTypes.func.isRequired,
-  selectTab: PropTypes.func.isRequired, // ??
-  tab: PropTypes.arrayOf(PropTypes.string).isRequired
-};
+// Tabs.propTypes={
+//   selectTabHandler: PropTypes.func.isRequired,
+//   selectTab: PropTypes.func.isRequired, // ??
+//   tab: PropTypes.arrayOf(PropTypes.string).isRequired
+// };
 
 
 

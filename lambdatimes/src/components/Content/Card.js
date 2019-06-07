@@ -15,9 +15,9 @@ const Card = props => {
   );
 };
 
-Card.propTypes={
-  
-}
+// Card.propTypes={
+
+// }
 
 // Make sure to include PropTypes.
 
