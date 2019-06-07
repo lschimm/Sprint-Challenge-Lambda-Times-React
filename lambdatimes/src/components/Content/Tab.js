@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from'prop-types';
 
 
 const Tab = props => {
@@ -8,7 +9,7 @@ const Tab = props => {
   return (
     <div
       className={'tab active-tab'}
-      onClick={(tab) => {props.tab.selectTabHandler()}
+      onClick={(tab) => {props.selectTabHandler(tab)}
         
         /* Replace this dummy click handler function with your 
           selectTabHandler function from props 
@@ -18,6 +19,11 @@ const Tab = props => {
       {props.tab.toUpperCase()}
     </div>
   );
+};
+
+Tab.propTypes={
+  selectTabHandler: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired, // ??
 };
 
 // Make sure you include PropTypes on your props.
