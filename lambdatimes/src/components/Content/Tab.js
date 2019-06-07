@@ -7,31 +7,18 @@ const Tab = props => {
       if it is not it should just be 'tab'*/
   return (
     <div
-      className={''}
-      onClick={() => {}
+      className={'tab active-tab'}
+      onClick={(tab) => {props.tab.selectTabHandler()}
         
-        /* Replace this dummy click handler function with your selectTabHandler function from props 
-         you'll need to pass the `tab` in as an argument to this handler. */
+        /* Replace this dummy click handler function with your 
+          selectTabHandler function from props 
+          you'll need to pass the `tab` in as an argument to this handler. */
       }
     >
       {props.tab.toUpperCase()}
     </div>
   );
 };
-
-
-// class Tab extends React.Component {
-//   constructor (props)
-//   super();
-//   this.state= {
-
-//   }
-
-//   render() {
-//     return (
-//     )
-//   }
-// }
 
 // Make sure you include PropTypes on your props.
 
